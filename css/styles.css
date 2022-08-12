@@ -173,6 +173,17 @@ p {
 }
 
 /*--------------BENEFITS-------------*/
+.benefit-cont{
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+padding-top: 25px;
+padding-bottom: 25px;
+
+
+background: #F5F4FA;
+border-radius: 4px;
+}
 
 .benefits-list {
   display: flex;
@@ -306,7 +317,7 @@ fill: var(--white-color);
 }
 /* --------------CLIENTS----------------- */
 .clients-header{
-margin-bottom: 30px;
+margin-bottom: 50px;
 
 font-weight: 700;
 font-size: 36px;
@@ -339,13 +350,17 @@ border-radius: 4px;
   width: 106px;
   fill:#AFB1B8;
 }
-.clients-item:hover,
-.clients-item:focus{
+.client-box{
+  outline: solid #AFB1B8 1px;
+  border-radius: 4px;
+}
+.client-box:hover,
+.client-box:focus{
   outline: solid var(--accent-color) 1px;
   border-radius: 4px;
 }
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon{
+.client-box:hover .clients-icon,
+.client-box:focus .clients-icon{
   fill: var(--accent-color);
   border-radius: 4px;
 }
@@ -384,13 +399,42 @@ border-radius: 4px;
   margin-top: 9px;
 }
 .footer-header{
-
 font-weight: 700;
 font-size: 14px;
-line-height: 0.07;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
+}
+.footer-links-section{
+  margin-left: 70px;
+  padding-top: 13px;
+}
+.team-social-link-footer{
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.team-social-link-footer{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.1);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-social-link-footer .team-social-icon{
+  fill: var(--white-color);
+}
+.team-social-link-footer:hover,
+.team-social-link-footer:focus{
+background-color: var(--accent-color);
+}
+
+.team-social-link-footer:hover .team-social-icon,
+.team-social-link-footer:focus .team-social-icon{
+fill: var(--white-color);
 }
 
 /*-------------------------------------*/
