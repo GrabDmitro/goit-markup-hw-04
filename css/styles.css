@@ -102,6 +102,7 @@ p {
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
+
 }
 
 .current {
@@ -113,10 +114,12 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+
 }
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+ 
 }
 .header-list {
   display: flex;
@@ -124,6 +127,15 @@ p {
 }
 .header-list .contact + .contact {
   margin-left: 50px;
+  
+}
+.contact-icon{
+margin-right: 10px;
+margin-bottom: auto;
+}
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon{
+fill:var(--accent-color);
 }
 /*------------HERO-------------*/
 .hero {
@@ -434,7 +446,7 @@ background-color: var(--accent-color);
 
 .team-social-link-footer:hover .team-social-icon,
 .team-social-link-footer:focus .team-social-icon{
-fill: var(--white-color);
+  fill: var(--white-color);
 }
 
 /*-------------------------------------*/
