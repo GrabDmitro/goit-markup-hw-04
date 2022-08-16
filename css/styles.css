@@ -114,6 +114,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  display: flex;
 
 }
 .contact-link:hover,
