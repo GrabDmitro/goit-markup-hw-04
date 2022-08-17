@@ -57,7 +57,7 @@ p {
 
 /*-------HEADER--------*/
 .head {
-  border-bottom: solid 1px gray;
+  border-bottom: solid 1px #ECECEC;
 }
 .site-head {
   display: flex;
@@ -115,7 +115,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   display: flex;
-
+  align-items: center;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -131,8 +131,8 @@ p {
   
 }
 .contact-icon{
+fill: var(--secondary-text-color);
 margin-right: 10px;
-margin-bottom: auto;
 }
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon{
@@ -148,6 +148,12 @@ fill:var(--accent-color);
     url(../images/decorations/herobacg.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   margin-top: 0;
@@ -172,6 +178,7 @@ fill:var(--accent-color);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border:transparent;
 
   background: var(--accent-color);
   font-weight: 700;
@@ -187,15 +194,9 @@ fill:var(--accent-color);
 
 /*--------------BENEFITS-------------*/
 .benefit-cont{
-width: 270px;
-height: 120px;
-margin-bottom: 30px;
-padding-top: 25px;
-padding-bottom: 25px;
+width: 70px;
+height: 70px;
 
-
-background: #F5F4FA;
-border-radius: 4px;
 }
 
 .benefits-list {
@@ -206,6 +207,19 @@ border-radius: 4px;
 }
 .benefits-list .benefit-child + .benefit-child {
   margin-left: 30px;
+}
+.benefit-container{
+margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background: #F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .benefits-header {
@@ -302,10 +316,11 @@ border-radius: 4px;
   color: var(--secondary-text-color);
 }
 .team-social{
+  margin-top: 16px;
   display: flex;
   justify-content:center;
   gap:10px;
-  margin-bottom: 30px;
+  
 }
 .team-social-link{
   width: 44px;
@@ -351,14 +366,17 @@ color:var(--primary-text-color);
   justify-content: center;
 }
 .clients-item{
-outline:  1px solid #AFB1B8;
 border-radius: 4px;
+border: 1px solid #AFB1B8;
+
+width: 100%;
+height:100%;
+display:flex;
+align-items: center;
+justify-content: center;
 }
 .clients-icon{
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
+
   height: 60px;
   width: 106px;
   fill:#AFB1B8;
@@ -367,13 +385,13 @@ border-radius: 4px;
   outline: solid #AFB1B8 1px;
   border-radius: 4px;
 }
-.client-box:hover,
-.client-box:focus{
-  outline: solid var(--accent-color) 1px;
+.clients-item:hover,
+.clients-item:focus{
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
-.client-box:hover .clients-icon,
-.client-box:focus .clients-icon{
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon{
   fill: var(--accent-color);
   border-radius: 4px;
 }
@@ -382,6 +400,7 @@ border-radius: 4px;
 /*--------------FOOTER-------------*/
 .footer-box{
   display: flex;
+  align-items: baseline;
 }
 .bottom {
   background-color: #2f303a;
@@ -419,13 +438,19 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--white-color);
 }
+.social-footer{
+  margin-top: 20px;
+  display: flex;
+  justify-content:center;
+  gap:10px;
+}
 .footer-links-section{
   margin-left: 70px;
-  padding-top: 13px;
+
 }
 .team-social-link-footer{
   margin-bottom: 0;
-  margin-top: 20px;
+
 }
 .team-social-link-footer{
   width: 44px;
@@ -455,9 +480,7 @@ background-color: var(--accent-color);
 /*-------------------------------------*/
 
 /*--------FILTER SECTION---------*/
-.filter-section {
-  padding-bottom: 30px;
-}
+
 .filter {
   /* margin:auto; */
   justify-content: center;
@@ -469,6 +492,7 @@ background-color: var(--accent-color);
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
+  border: none;
 
   font-family: "Roboto";
   font-style: normal;
@@ -478,6 +502,7 @@ background-color: var(--accent-color);
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
 }
 .filter-item {
   margin-left: 0px;
@@ -489,6 +514,8 @@ background-color: var(--accent-color);
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 /*-------------content-----------*/
 .content-section {
@@ -500,7 +527,13 @@ background-color: var(--accent-color);
 
   flex-wrap: wrap;
 }
-
+.image-box{
+  cursor: pointer;
+}
+.image-box:hover,
+.image-box:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .proj-name {
   margin-bottom: 4px;
 
