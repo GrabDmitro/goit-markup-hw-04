@@ -524,23 +524,16 @@ border-radius: 4px;
 .photos {
   gap: 30px;
   display: flex;
-
   flex-wrap: wrap;
 }
 .portfolio-image-link{
-
   text-decoration: none;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 1), 0px 4px 4px rgba(0, 0, 0, 1), 1px 4px 6px rgba(0, 0, 0, 0.16);
-outline: red solid 10px;
 }
-.portfolio-image-link:hover,
-.portfolio-image-link:focus{
-  box-shadow: 0px 5px 5px rgb(0 0 0);
+
+.portfolio-image-link:hover .image-box,
+.portfolio-image-link:hover .image-box{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/* .image-box:hover,
-.image-box:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 1), 0px 4px 4px rgba(0, 0, 0, 1), 1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 
 .proj-name {
   margin-bottom: 4px;
@@ -568,7 +561,4 @@ outline: red solid 10px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-}
-.shdw{
-  box-shadow: 0px 5px 5px rgb(0 0 0);
 }
